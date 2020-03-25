@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGN UP FORM</title>
+</head>
+<style>
+	body{
+		background-image: url(reg-bg.jpg);
+		background-size: 100% 757px;
+		background-repeat: no-repeat;
+		height: 100%;
+		margin: 0;
+	}
+	.heading{
+		font-family: monospace;
+		text-align: center;
+		color: #FFEFBF;
+		font-size: 25px;
+		padding-top: 80px;
+	}
+	.container{
+		padding: 100px 550px;
+	}
+	.form{
+		width: 390px;
+		height: 300px;
+		background: rgba(231, 231, 231,0.7);
+		padding: 10px 30px;
+		font-size: 17px;
+		font-family: monospace;
+		border-radius: 7px;
+	}
+	p{
+		color: #040087;
+	}
+	input,option,select{
+		background-color: unset;
+		border-bottom: 1px solid #000;
+		border-left: none;
+		border-right: none;
+		border-top: none;
+		font-family: monospace;
+	}
+	select{
+		width: 292px;
+	}
+	option{
+		background-color: rgba(128, 128, 128,0.7);
+		border: none;
+	}
+	button{
+		padding: 5px 10px;
+		color: white;
+		display: inline-block;
+		opacity: 0.6;
+		border-radius: 10px;
+		text-align: center;
+		border: none;
+		width: 100%;
+		font-family: monospace;
+		font-size: 20px;
+	}
+	button:hover{
+		opacity: 1;
+	}
+</style>
+<body>
+	<div class="heading">Registration Form</div>
+	<div class="container">
+		<div class="form">
+			<form action="registration.php" method="post">
+				<p><input type="text" name="ParticipantName" placeholder="Name *" required style="width: 100%;"></p>
+				<p>Profession : 
+					<label style="color: #666666;"><input type="radio" name="Profession" required value="student">student</label>
+					<label style="color: #666666;"><input type="radio" name="Profession" value="faculty">faculty</label>
+					<label style="color: #666666;"><input type="radio" name="Profession" value="professional">professional</label>
+				</p>
+				<p><input type="text" name="CompanyName" placeholder="Company Name" style="width: 100%;"></p>
+				<p>
+					Country : &nbsp; &nbsp;
+					<select name="CountryName" required>
+						<option value="India">India</option>
+						<option value="America">America</option>
+						<option value="Australia">Australia</option>
+						<option value="Canada">Canada</option>
+						<option value="New Zealand">New Zealand</option>
+					</select>
+				</p>
+				<p><input type="Number" name="Contact" placeholder="# Contact Number" style="width: 100%;"></p>
+				<p style="padding-top: 5px;">
+					<center><button type="submit" style="background-color: #00B20B;">Submit</button></center>
+				</p>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
